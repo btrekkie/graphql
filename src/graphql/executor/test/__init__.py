@@ -1,0 +1,4 @@
+from executor import GraphQlExecutorTest
+from executor_validation import GraphQlExecutorValidationTest
+from introspect_all_fields import GraphQlIntrospectAllFieldsTest
+from introspection import GraphQlIntrospectionTest

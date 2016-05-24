@@ -1,0 +1,8 @@
+"""Provides GraphQL-enabled objects for testing multiple inheritance."""
+
+from multiple_inheritance import MultipleInheritanceTestA
+from multiple_inheritance import MultipleInheritanceTestB
+from multiple_inheritance import MultipleInheritanceTestC
+from multiple_inheritance import MultipleInheritanceTestD
+from multiple_inheritance import MultipleInheritanceTestE
+from multiple_inheritance import MultipleInheritanceTestF

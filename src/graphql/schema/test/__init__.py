@@ -1,0 +1,2 @@
+from base_type import GraphQlBaseTypeTest
+from schema import GraphQlSchemaTest
