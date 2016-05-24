@@ -2,7 +2,6 @@ import collections
 import copy
 import re
 import sys
-import types
 
 from errors import GraphQlBadScalarDescriptorError
 from errors import GraphQlFieldTypeError
@@ -479,7 +478,7 @@ class GraphQlExecutor(object):
                 field_query)
 
         # Compute the results
-        results = {}
+        results = collections.OrderedDict()
         for response_key in response_keys:
             field_queries = response_key_to_field_queries[response_key]
             name = field_queries[0]['fieldQuery'].field_descriptor.name
