@@ -125,12 +125,12 @@ In order to execute a GraphQL document, we need to pass a `GraphQlContext` to
 an example of how to obtain a `GraphQlSchema`:
 
 <pre lang="python">
-schema_filename():
+def schema_filename():
     """Return the name of the file that stores the schema."""
     return os.path.join(root_project_dir(), 'graphql_schema.json')
 
 
-generate_schema():
+def generate_schema():
     """Compute the schema for the project and store it in schema_filename()."""
     # Find all of the modules in the project
     modules = []
@@ -152,7 +152,7 @@ generate_schema():
         json.dump(schema.to_json(), f)
 
 
-get_schema():
+def get_schema():
     """Return the GraphQlSchema for the project."""
     with open(schema_filename(), 'r') as f:
         return GraphQlSchema.create_from_json(json.load(f))
